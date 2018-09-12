@@ -1,7 +1,9 @@
+var customerNumber = 0;
 
 function takeANumber(line, newPerson) {
-  var lineLength = line.push(newPerson);
-  return `Welcome, ${newPerson}. You are number ` + lineLength + ` in line.`;
+  customerNumber++;
+//  var lineLength = line.push(newPerson);
+  return `Welcome, ${newPerson}. You are number ` + customerNumber + ` of the day.`;
 }
 
 function nowServing(line) {
